@@ -28,7 +28,7 @@ syntax on
 " zR  打开所有的折叠
 
 set foldmethod=indent
-set foldlevel=4
+set foldlevel=1
 " set foldcolumn=5
 
 "允许同时编辑多个文件"
@@ -125,6 +125,9 @@ set report=0
 let mapleader = "\<Space>"
 
 
+nmap <leader>t :tabn<cr>
+nmap <leader>c :tabc<cr>
+nmap <leader>q :close<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""Window Manager Setting""""""""""""""""""""""""""""""""""""""
@@ -248,16 +251,16 @@ Plug 'https://github.com/vim-scripts/winmanager.git'
 " plugin taglist
 Plug 'https://github.com/vim-scripts/taglist.vim.git'
 
-" plugin echofunc
+" plugin echofunc based on bufexplorer
 " this plugin depends on tags, and param '--fields=+lS' should be added to ctags
 " Plug 'https://github.com/mbbill/echofunc.git'
 
 " plugin to highlight markdown code
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 " plugin for instant markdown, based on nodejs
 " more info: http://www.jianshu.com/p/24aefcd4ca93
-Plug 'suan/vim-instant-markdown'
+" Plug 'suan/vim-instant-markdown'
 
 call plug#end()
