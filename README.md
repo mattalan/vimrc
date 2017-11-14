@@ -1,4 +1,4 @@
-#vimrc
+# vimrc
 this is the backup of my own vimrc, welcomde fork or commit.
 
 ---
